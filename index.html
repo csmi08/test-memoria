@@ -772,7 +772,7 @@ function render() {
     '<div class="q-tag">Pregunta ' + (cur+1) + '</div>' +
     '<p class="q-text">' + q.text + '</p>' +
     '<div class="options">' +
-    q.opts.map(o => '<button class="opt'+(answers[cur]===o.label?' selected':'')+'" onclick="pick(''+o.label+'')">' +
+    q.opts.map(o => '<button class="opt'+(answers[cur]===o.label?' selected':'')+'" onclick="pick(''+o.label+'')">' +)
       '<span class="opt-badge">'+o.label+'</span>' +
       '<span class="opt-text">'+o.text+'</span>' +
     '</button>').join('') +
